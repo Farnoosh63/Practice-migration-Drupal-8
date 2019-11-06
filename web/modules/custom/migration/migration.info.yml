@@ -1,0 +1,9 @@
+name: 'migration'
+type: module
+description: 'A testing module to create custom migration plugins.'
+core: 8.x
+package: 'Custom'
+dependencies:
+  - migrate
+  - migrate_plus
+  - migrate_tools

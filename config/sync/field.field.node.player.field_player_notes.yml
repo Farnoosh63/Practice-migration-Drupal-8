@@ -1,0 +1,19 @@
+uuid: bc6432b4-88ff-41be-aecd-9c54edf70820
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_player_notes
+    - node.type.player
+id: node.player.field_player_notes
+field_name: field_player_notes
+entity_type: node
+bundle: player
+label: Notes
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

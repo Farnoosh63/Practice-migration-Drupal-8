@@ -1,0 +1,21 @@
+uuid: 8ee97ee7-f84f-4ce3-83e0-96a3ad2fda59
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_player_throws
+    - node.type.player
+  module:
+    - options
+id: node.player.field_player_throws
+field_name: field_player_throws
+entity_type: node
+bundle: player
+label: Throws
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

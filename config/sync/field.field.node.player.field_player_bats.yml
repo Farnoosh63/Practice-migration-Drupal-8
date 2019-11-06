@@ -1,0 +1,21 @@
+uuid: 6f86baca-769a-4272-b436-326683149418
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_player_bats
+    - node.type.player
+  module:
+    - options
+id: node.player.field_player_bats
+field_name: field_player_bats
+entity_type: node
+bundle: player
+label: Bats
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,22 @@
+id: baseball_team
+label: Migrate teams
+migration_group: baseball
+
+source:
+  plugin: baseball_team
+  key: migrate
+
+destination:
+  plugin: entity:node
+  default_bundle: team
+
+process:
+  field_team_park: park
+  title:
+    plugin: concat
+    source:
+      - name
+      - park
+    delimiter: " "
+
+migration_dependencies: {}

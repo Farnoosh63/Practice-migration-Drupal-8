@@ -1,0 +1,22 @@
+name: drupal-8-migration
+recipe: drupal8
+config:
+  webroot: web
+
+tooling:
+  drupal:
+    cmd:
+      - "/app/vendor/bin/drupal"
+# services:
+#   stats:
+#     type: mysql
+#     creds:
+#       user: stats
+#       password: stats
+#       database: stats
+#   stats:
+#     type: mysql
+#     creds:
+#       user: admin
+#       password: root
+#       database: stats

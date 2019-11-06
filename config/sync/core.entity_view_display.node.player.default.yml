@@ -1,0 +1,121 @@
+uuid: 601b4249-fc0f-45ed-b31b-aae9d95c53d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.player.body
+    - field.field.node.player.field_player_bats
+    - field.field.node.player.field_player_birth
+    - field.field.node.player.field_player_death
+    - field.field.node.player.field_player_given_name
+    - field.field.node.player.field_player_height
+    - field.field.node.player.field_player_id
+    - field.field.node.player.field_player_notes
+    - field.field.node.player.field_player_teams
+    - field.field.node.player.field_player_throws
+    - field.field.node.player.field_player_weight
+    - node.type.player
+  module:
+    - datetime
+    - options
+    - text
+    - user
+id: node.player.default
+targetEntityType: node
+bundle: player
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_player_bats:
+    weight: 107
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_player_birth:
+    weight: 108
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_player_death:
+    weight: 109
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_player_given_name:
+    weight: 103
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_player_height:
+    weight: 105
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_player_id:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_player_notes:
+    weight: 110
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_player_teams:
+    weight: 111
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_player_throws:
+    weight: 106
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_player_weight:
+    weight: 104
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

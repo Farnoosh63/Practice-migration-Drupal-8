@@ -1,0 +1,23 @@
+uuid: eb6fa818-c034-4928-8555-eafa31563ce2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_player_height
+    - node.type.player
+id: node.player.field_player_height
+field_name: field_player_height
+entity_type: node
+bundle: player
+label: Height
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

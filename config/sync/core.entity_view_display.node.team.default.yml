@@ -1,0 +1,46 @@
+uuid: d7f44ed2-7987-464e-b561-a3546482121c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.team.body
+    - field.field.node.team.field_team_id
+    - field.field.node.team.field_team_park
+    - node.type.team
+  module:
+    - text
+    - user
+id: node.team.default
+targetEntityType: node
+bundle: team
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_team_id:
+    weight: 103
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_team_park:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

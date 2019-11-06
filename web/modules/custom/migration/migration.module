@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains migration.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function migration_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the migration module.
+    case 'help.page.migration':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('A testing module to create custom migration plugins.') . '</p>';
+      return $output;
+
+    default:
+  }
+}

@@ -1,0 +1,47 @@
+id: baseball_player
+label: Migrate list of players
+migration_group: baseball
+
+source:
+  plugin: baseball_player
+
+destination:
+  plugin: entity:node
+
+process:
+  type:
+    plugin: default_value
+    default_value: player
+
+  field_player_weight: weight
+  field_player_height: height
+  field_player_bats: bats
+  field_player_throws: throws
+  field_player_given_name: nameGiven
+
+  title:
+    plugin: concat
+    source:
+      - nameFirst
+      - nameLast
+    delimiter: " "
+
+  field_player_birth:
+    plugin: format_date
+    source: datetime
+    from_format: 'j-n-Y'
+    to_format: Y-n-j'
+
+  field_player_death:
+    -
+      plugin: concat
+      source:
+        - deathYear
+        - deathMonth
+        - deathDay
+      delimiter: -
+    -
+      plugin: default_value
+      default_value: ""
+
+migration_dependencies: {}
