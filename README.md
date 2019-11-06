@@ -13,9 +13,9 @@ From the project root, run `lando start` and wait for the containers to build. O
 ```
 lando db-import --user=drupal8 d8-db.sql.gz
 ```
-2- Download and Import our source data from [here](http://seanlahman.com/files/database/2016-03-09_mysql-core.zip)
+2- Download and Import our source data from [here](http://seanlahman.com/files/database/2016-03-09_mysql-core.zip) or [here](https://github.com/Farnoosh63/Practice-migration-Drupal-8/blob/master/web/stats.sql)
 
-*We will be using the Teams and Master tables.
+* We will be using the Teams and Master tables.
 
 ```
 lando db-import --user=stats stats.sql
@@ -76,6 +76,7 @@ lando drush ms
         ```
     2- if still getting the error make sure that you have the stats user inside your lando db container.
     >> SQLSTATE[HY000] [1045] Access denied for user 'stats'@'172.27.0.3' (using password: YES)
+
         ```
         lando mysql
         ```
