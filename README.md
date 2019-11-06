@@ -8,7 +8,7 @@ This is a [Lando](https://docs.devwithlando.io) local dev environment.
 Latest versions of [Lando >= 3.0.0-rc.16](https://docs.devwithlando.io)
 
 ### Setup the project
-From the project root, run `lando start` and wait for the containers to build. Once the containers have started, follow these steps:
+From the project root, run `lando start` and wait for the containers to build. Once the containers have started run `lando composer install`,and follow these steps:
 1- Import the D8 database d8-db.sql.gz from the root of this repository. This db includes the installed drupal 8 site and two content types, "Player" and "Team" and their fields.
 ```
 lando db-import --user=drupal8 d8-db.sql.gz
@@ -77,15 +77,9 @@ lando drush ms
     2- if still getting the error make sure that you have the stats user inside your lando db container.
     >> SQLSTATE[HY000] [1045] Access denied for user 'stats'@'172.27.0.3' (using password: YES)
 
-        ```
-        lando mysql
-        ```
-        ```
-        mysql> use mysql;
-        ```
-        ```
-        mysql> select user, host from user;
-        ```
+        `lando mysql`
+        `mysql> use mysql;`
+        `mysql> select user, host from user;`
 
     you should see
 
