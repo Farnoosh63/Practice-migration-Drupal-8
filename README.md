@@ -102,5 +102,6 @@ lando mim baseball_team --limit=2
 2- lando drush ms ( check status of both migration config set to Idle)
 3- lando drush cim -y
 4- lando drush dre migration
-5- lando drush ms
-6- lando drush mim baseball_team --limit=3
+5- lando drush cr
+6- lando drush ms
+7- lando drush mim baseball_team --limit=3
