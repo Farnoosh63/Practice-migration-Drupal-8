@@ -110,7 +110,7 @@ lando mim baseball_team --limit=2
 
 ### In the process of learning and troubleshooting
 
-1- Default field Date use format (Y-m-d)[https://git.drupalcode.org/project/drupal/blob/HEAD/core/modules/datetime/src/Plugin/Field/FieldType/DateTimeItemInterface.php#n23] to store date. and (Y-m-d\TH:i:s)[https://git.drupalcode.org/project/drupal/blob/HEAD/core/modules/datetime/src/Plugin/Field/FieldType/DateTimeItemInterface.php#n18] to store datatime.
+1- Default field Date use format [Y-m-d](https://git.drupalcode.org/project/drupal/blob/HEAD/core/modules/datetime/src/Plugin/Field/FieldType/DateTimeItemInterface.php#n23) to store date. and [Y-m-d\TH:i:s](https://git.drupalcode.org/project/drupal/blob/HEAD/core/modules/datetime/src/Plugin/Field/FieldType/DateTimeItemInterface.php#n18) to store datatime.
 2- Php date format https://www.php.net/manual/en/datetime.createfromformat.php
 3- The migration config id should not match the Content type machine name!
 4- If you get title is null error, check out migration config file for any indentation or typo.
