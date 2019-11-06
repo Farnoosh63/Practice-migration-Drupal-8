@@ -30,7 +30,7 @@ process:
     plugin: format_date
     source: datetime
     from_format: 'j-n-Y'
-    to_format: Y-n-j'
+    to_format: 'Y-m-d'
 
   field_player_death:
     -
