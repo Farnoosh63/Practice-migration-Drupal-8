@@ -111,11 +111,17 @@ lando mim baseball_team --limit=2
 ### In the process of learning and troubleshooting
 
 1- Default field Date use format [Y-m-d](https://git.drupalcode.org/project/drupal/blob/HEAD/core/modules/datetime/src/Plugin/Field/FieldType/DateTimeItemInterface.php#n23) to store date. and [Y-m-d\TH:i:s](https://git.drupalcode.org/project/drupal/blob/HEAD/core/modules/datetime/src/Plugin/Field/FieldType/DateTimeItemInterface.php#n18) to store datatime.
+
 2- Php date format https://www.php.net/manual/en/datetime.createfromformat.php
+
 3- The migration config id should not match the Content type machine name!
+
 4- If you get title is null error, check out migration config file for any indentation or typo.
+
 5- Sometimes you should run lando rebuild a few time for the user access to source database.
+
 If it wont work, try to create a user with the mentioned host name from the error message.
+
 >> SQLSTATE[HY000] [1045] Access denied for user 'stats'@'172.27.0.3' (using password: YES)
 
 for the above error message try to create a user stats with host 172.27.0.3.
